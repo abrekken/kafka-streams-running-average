@@ -18,7 +18,6 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class StreamsTest {
     private TopologyTestDriver testDriver;
-    private StreamsBuilder streamsBuilder;
     private TestInputTopic<String, String> inputTopic;
     private TestOutputTopic<Windowed<String>, ResultEvent> outputTopic;
     private final Serde<String> stringSerde = new Serdes.StringSerde();
